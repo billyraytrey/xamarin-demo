@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             x:Class="XamarinAccountSetupDemo.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#1E1E1E"/>
+                <Setter Property="BarTextColor" Value="#1E1E1E"/>
+                <Setter Property="BackgroundColor" Value="#1E1E1E"/>
+            </Style>
+            <Style x:Key="titleStyle" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="Margin" Value="0,0,0,15"/>
+                <Setter Property="FontSize" Value="36"/>
+                <Setter Property="TextColor" Value="White"/>
+            </Style>
+            <Style x:Key="headerStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="Margin" Value="0,5,0,0"/>
+                <Setter Property="TextColor" Value="White"/>
+            </Style>
+            <Style x:Key="invalidStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="Red"/>
+            </Style>
+            <Style x:Key="entryStyle" TargetType="Entry">
+                <Setter Property="Margin" Value="15,0,15,0"/>
+                <Setter Property="BackgroundColor" Value="#3D3D3D"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="PlaceholderColor" Value="#E5E5E5"/>
+            </Style>
+            <Style x:Key="buttonStyle" TargetType="Button">
+                <Setter Property="Margin" Value="15,25,15,0"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="BackgroundColor" Value="#3D3D3D"/>
+            </Style>
+            <Style x:Key="svgStyle" TargetType="forms:SKCanvasView">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="BackgroundColor" Value="#1E1E1E"/>
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

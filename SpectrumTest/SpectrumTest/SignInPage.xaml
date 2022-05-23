@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinAccountSetupDemo.SignInPage">
+
+    <StackLayout >
+        <Label Text="Sign In" Style="{StaticResource titleStyle}"/>
+        <Entry Placeholder="Username" Text="{Binding UserName}" Style="{StaticResource entryStyle}" />
+        <Entry Placeholder="Password" Text="{Binding Password}" Style="{StaticResource entryStyle}" IsPassword="True" />
+        <Button x:Name="SignIn" Text="Sign In" Clicked="SingInButtonClicked" IsEnabled="{Binding SignInEnabled}" Style="{StaticResource buttonStyle}" />
+        <Button Text="New User? Create Account" Clicked="NewUserButtonClicked" Style="{StaticResource buttonStyle}" />
+    </StackLayout>
+
+</ContentPage>

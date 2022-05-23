@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="clr-namespace:XamarinAccountSetupDemo.Controls"
+             x:Class="XamarinAccountSetupDemo.NewAccountPage">
+    <ContentPage.Content >
+        <ScrollView>
+            <StackLayout VerticalOptions="Fill">
+                <Label Text="New Account" Style="{StaticResource titleStyle}"/>
+
+                <Label Text="First Name" Style="{StaticResource headerStyle}"/>
+                <Entry x:Name="firstName" Placeholder="First Name" Text="{Binding FName}" Style="{StaticResource entryStyle}" />
+                <Label Text="Invalid Entry" IsVisible="{Binding FNameInValid}" Style="{StaticResource invalidStyle}"/>
+
+                <Label Text="Last Name" Style="{StaticResource headerStyle}"/>
+                <Entry x:Name="lastName" Placeholder="Last Name" Text="{Binding LName}" Style="{StaticResource entryStyle}"/>
+                <Label Text="Invalid Entry" IsVisible="{Binding LNameInValid}" Style="{StaticResource invalidStyle}"/>
+
+                <Label Text="Username" Style="{StaticResource headerStyle}"/>
+                <Entry x:Name="username" Placeholder="Username" Text="{Binding UName}" Style="{StaticResource entryStyle}"/>
+
+                <Label Text="Password" Style="{StaticResource headerStyle}"/>
+                <Entry x:Name="password" Placeholder="Password" Text="{Binding Password}" Style="{StaticResource entryStyle}" IsPassword="True"/>
+                <Label Text="Password must have from 8 to 15 characters." TextColor="Green">
+                    <Label.Triggers>
+                        <DataTrigger TargetType="Label" Binding="{Binding PasswordIncorrectLength}" Value="True">
+                            <Setter Property="TextColor" Value="Red"/>
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+                <Label Text="Password must have at least one lowercase letter." TextColor="Green">
+                    <Label.Triggers>
+                        <DataTrigger TargetType="Label" Binding="{Binding PasswordContainsNoLowerCase}" Value="True">
+                            <Setter Property="TextColor" Value="Red"/>
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+                <Label Text="Password must have at least one uppercase letter" TextColor="Green">
+                    <Label.Triggers>
+                        <DataTrigger TargetType="Label" Binding="{Binding PasswordContainsNoUpperCase}" Value="True">
+                            <Setter Property="TextColor" Value="Red"/>
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+
+                <Label Text="Phone Number" Style="{StaticResource headerStyle}"/>
+                <Entry x:Name="number" Placeholder="(XXX)-XXX-XXXX" Text="{Binding Number}" Style="{StaticResource entryStyle}" Keyboard="Numeric">
+                    <Entry.Behaviors>
+                        <controls:PhoneEntry/>
+                    </Entry.Behaviors>
+                </Entry>
+                <Label Text="Invalid Entry" IsVisible="{Binding NumberInValid}" Style="{StaticResource invalidStyle}"/>
+                
+                <Label Text="Service Start Date" Style="{StaticResource headerStyle}"/>
+                <Entry x:Name="date" Placeholder="MM/DD/YYYY" Text="{Binding Date}" Style="{StaticResource entryStyle}" Keyboard="Numeric">
+                    <Entry.Behaviors>
+                        <controls:DateEntry/>
+                    </Entry.Behaviors>
+                </Entry>
+                <Label Text="Invalid Entry" IsVisible="{Binding DateInValid}" Style="{StaticResource invalidStyle}"/>
+                <Button x:Name="createBtn" Text="Create Account" Clicked="CreateAccountClicked" IsEnabled="{Binding CreateAccountEnabled}" Style="{StaticResource buttonStyle}"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

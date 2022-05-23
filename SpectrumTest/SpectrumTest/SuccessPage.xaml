@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:forms="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             x:Class="XamarinAccountSetupDemo.SuccessPage">
+    <ContentPage.Content>
+        <StackLayout >
+            <Label Text="Success!" Style="{StaticResource titleStyle}"/>
+            <forms:SKCanvasView x:Name="xCanvasView" PaintSurface="OnPainting" Style="{StaticResource svgStyle}"/>
+            <Label Text="Account Successfully Created" Style="{StaticResource headerStyle}" HorizontalOptions="Center"/>
+            <Button Text="Login Now?" Clicked="LoginClicked" Style="{StaticResource buttonStyle}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
