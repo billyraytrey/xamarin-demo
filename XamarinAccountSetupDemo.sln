@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinAccountSetupDemo.UWP", "SpectrumTest\SpectrumTest.UWP\XamarinAccountSetupDemo.UWP.csproj", "{CB774D15-4AFA-43BB-B70F-EE504329C21B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinAccountSetupDemo.UWP", "XamarinAccountSetupDemo\XamarinAccountSetupDemo.UWP\XamarinAccountSetupDemo.UWP.csproj", "{CB774D15-4AFA-43BB-B70F-EE504329C21B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinAccountSetupDemo.Android", "SpectrumTest\SpectrumTest.Android\XamarinAccountSetupDemo.Android.csproj", "{BB3F96DD-80D7-440E-8518-992D32286255}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinAccountSetupDemo.Android", "XamarinAccountSetupDemo\XamarinAccountSetupDemo.Android\XamarinAccountSetupDemo.Android.csproj", "{BB3F96DD-80D7-440E-8518-992D32286255}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinAccountSetupDemo.iOS", "SpectrumTest\SpectrumTest.iOS\XamarinAccountSetupDemo.iOS.csproj", "{2AAADD2C-7523-4D5B-A9EE-620BDB613850}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinAccountSetupDemo.iOS", "XamarinAccountSetupDemo\XamarinAccountSetupDemo.iOS\XamarinAccountSetupDemo.iOS.csproj", "{2AAADD2C-7523-4D5B-A9EE-620BDB613850}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamarinAccountSetupDemo", "SpectrumTest\SpectrumTest\XamarinAccountSetupDemo.csproj", "{CF3F56B9-D577-4960-9CA3-7BD2B0161418}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamarinAccountSetupDemo", "XamarinAccountSetupDemo\XamarinAccountSetupDemo\XamarinAccountSetupDemo.csproj", "{CF3F56B9-D577-4960-9CA3-7BD2B0161418}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamarinAccountSetupDemoViewModel", "SpectrumTestViewModel\XamarinAccountSetupDemoViewModel.csproj", "{B6E1063A-3AD3-4F5F-9A38-2059A987DBD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamarinAccountSetupDemoViewModel", "XamarinAccountSetupDemoViewModel\XamarinAccountSetupDemoViewModel.csproj", "{B6E1063A-3AD3-4F5F-9A38-2059A987DBD3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamarinAccountSetupDemoModel", "SpectrumTestModel\XamarinAccountSetupDemoModel.csproj", "{87E0D5B3-8554-4E09-B855-603D93C7AF14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamarinAccountSetupDemoModel", "XamarinAccountSetupDemoModel\XamarinAccountSetupDemoModel.csproj", "{87E0D5B3-8554-4E09-B855-603D93C7AF14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

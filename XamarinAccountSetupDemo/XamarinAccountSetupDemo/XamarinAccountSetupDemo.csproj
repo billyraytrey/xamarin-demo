@@ -28,7 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\SpectrumTestViewModel\XamarinAccountSetupDemoViewModel.csproj" />
+    <ProjectReference Include="..\..\XamarinAccountSetupDemoViewModel\XamarinAccountSetupDemoViewModel.csproj" />
   </ItemGroup>
 
   <ItemGroup>

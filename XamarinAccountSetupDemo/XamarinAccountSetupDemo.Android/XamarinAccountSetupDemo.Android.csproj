@@ -90,7 +90,7 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SpectrumTest\XamarinAccountSetupDemo.csproj">
+    <ProjectReference Include="..\XamarinAccountSetupDemo\XamarinAccountSetupDemo.csproj">
       <Project>{CF3F56B9-D577-4960-9CA3-7BD2B0161418}</Project>
       <Name>XamarinAccountSetupDemo</Name>
     </ProjectReference>
